@@ -10,6 +10,7 @@ public class UserRegistrationRegex {
 		System.out.println("Welcome to java regex user registration problem");
 		firstName();
 		lastName();
+		email();
 		
 	}
 	
@@ -25,6 +26,13 @@ public class UserRegistrationRegex {
 		System.out.println("Enter last name");
 		String lastName = scanner.nextLine();
 		validator(patternLastName, lastName, "Last Name");
+	}
+	
+	public static void email() {
+		String patternEmail = "^[a-zA-Z0-9-_+]+(\\.?[a-zA-Z0-9-_]+)@[a-zA-Z0-9-_]+\\.[a-zA-Z]{2,}(\\.?[a-zA-Z-_]+)";
+		System.out.println("Enter email");
+		String email = scanner.nextLine();
+		validator(patternEmail, email, "Email");
 	}
 	
 	public static void validator(String pattern, String input, String type) {
