@@ -59,6 +59,10 @@ public class UserRegistrationRegex {
 		validator(patternMobileNo, mobileNo, "Mobile Number");
 	}
 	
+	public static void password() {
+		String patternPassword = "";
+	}
+	
 	/**method where the pattern is matched with input
 	 * @param pattern
 	 * @param input
