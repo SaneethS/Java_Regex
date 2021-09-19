@@ -64,7 +64,7 @@ public class UserRegistrationRegex {
 	 * method where password of the user is validated
 	 */
 	public static void password() {
-		String patternPassword = "(?=.*[A-Z])(?=.*[0-9]).{8,}";
+		String patternPassword = "(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}";
 		System.out.println("Enter Password");
 		String password = scanner.nextLine();
 		validator(patternPassword, password, "Password");
