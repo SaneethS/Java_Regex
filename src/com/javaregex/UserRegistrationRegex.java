@@ -12,10 +12,11 @@ public class UserRegistrationRegex {
 	
 	public static void main(String[] args) {
 		System.out.println("Welcome to java regex user registration problem");
-		firstName();
-		lastName();
-		email();
-		mobileNo();
+//		firstName();
+//		lastName();
+//		email();
+//		mobileNo();
+		password();
 		
 	}
 	
@@ -63,7 +64,7 @@ public class UserRegistrationRegex {
 	 * method where password of the user is validated
 	 */
 	public static void password() {
-		String patternPassword = "^[a-zA-Z0-9]{8}";
+		String patternPassword = "^[[a-zA-Z0-9]*[A-Z]+[a-zA-Z0-9]*]{8}";
 		System.out.println("Enter Password");
 		String password = scanner.nextLine();
 		validator(patternPassword, password, "Password");
