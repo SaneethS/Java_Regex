@@ -59,8 +59,15 @@ public class UserRegistrationRegex {
 		validator(patternMobileNo, mobileNo, "Mobile Number");
 	}
 	
+	/**
+	 * method where password of the user is validated
+	 */
 	public static void password() {
-		String patternPassword = "";
+		String patternPassword = "^[a-zA-Z0-9]{8}";
+		System.out.println("Enter Password");
+		String password = scanner.nextLine();
+		validator(patternPassword, password, "Password");
+		
 	}
 	
 	/**method where the pattern is matched with input
